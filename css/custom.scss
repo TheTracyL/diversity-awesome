@@ -1,3 +1,60 @@
+
+@import 'partials/mixins';
+
+/*********************************************
+ * FONTS
+ *********************************************/
+
+
+// Font Awesome 
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../lib/font/font-awesome/fontawesome-webfont.eot');
+  src: url('../lib/font/font-awesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), 
+  url('../lib/font/font-awesome/fontawesome-webfont.woff2') format('woff2'), 
+  url('../lib/font/font-awesome/fontawesome-webfont.woff') format('woff'), 
+  url('../lib/font/font-awesome/fontawesome-webfont.ttf') format('truetype'), 
+  url('../lib/font/font-awesome/fontawesome-webfont.svg#svgFontAwesome') format('svg');
+}
+
+
+/*********************************************
+ * GLOBAL
+ *********************************************/
+
+// Colors
+
+$linkColor: #e7ad52;
+$quoteColor: #8fadd0;
+
+
+/*********************************************
+ * GLOBAL
+ *********************************************/
+
+.reveal blockquote {
+	color: $quoteColor;
+	font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+	width: 94%;
+
+	&:before {
+		display: inline-block;
+		@include fontawesome("\f10d");
+		margin-right: 0.4em;
+	}
+
+	&:after {
+		display: inline-block;
+		@include fontawesome("\f10e");
+		margin-left: 0.4em;
+	}
+}
+
+
+
 /*********************************************
  * IMAGES
  *********************************************/
