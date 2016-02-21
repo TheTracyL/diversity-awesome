@@ -27,11 +27,9 @@
 
 $linkColor: #e7ad52;
 $quoteColor: #8fadd0;
+$success: #2ecc71;
 
-
-/*********************************************
- * GLOBAL
- *********************************************/
+// block elements
 
 .reveal blockquote {
 	color: $quoteColor;
@@ -54,6 +52,31 @@ $quoteColor: #8fadd0;
 }
 
 
+/*********************************************
+ * LAYOUT
+ *********************************************/
+
+.reveal {
+	div.left, div.right {
+		display: inline-block;
+		width: 48%;
+		vertical-align: top;
+
+		li {
+			list-style-type: none;
+			margin: 0.8em 0;
+
+			.fa {
+				color: $success;
+			}
+		}
+
+		blockquote {
+			font-size: 1.2em;
+			width: 98%;
+		}
+	}
+}
 
 /*********************************************
  * IMAGES

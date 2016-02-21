@@ -9,9 +9,6 @@
 /*********************************************
  * GLOBAL
  *********************************************/
-/*********************************************
- * GLOBAL
- *********************************************/
 .reveal blockquote {
   color: #8fadd0;
   font-family: Georgia, Times, "Times New Roman", serif;
@@ -28,6 +25,22 @@
     content: "";
     font-family: FontAwesome;
     margin-left: 0.4em; }
+
+/*********************************************
+ * LAYOUT
+ *********************************************/
+.reveal div.left, .reveal div.right {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top; }
+  .reveal div.left li, .reveal div.right li {
+    list-style-type: none;
+    margin: 0.8em 0; }
+    .reveal div.left li .fa, .reveal div.right li .fa {
+      color: #2ecc71; }
+  .reveal div.left blockquote, .reveal div.right blockquote {
+    font-size: 1.2em;
+    width: 98%; }
 
 /*********************************************
  * IMAGES
