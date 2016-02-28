@@ -76,6 +76,15 @@ $success: #2ecc71;
 			width: 98%;
 		}
 	}
+
+	.horizontal-list {
+		width: 100%;
+		
+		li {
+			display: inline-block;
+			width: 24%;
+		}
+	}
 }
 
 /*********************************************

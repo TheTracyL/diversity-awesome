@@ -41,6 +41,11 @@
   .reveal div.left blockquote, .reveal div.right blockquote {
     font-size: 1.2em;
     width: 98%; }
+.reveal .horizontal-list {
+  width: 100%; }
+  .reveal .horizontal-list li {
+    display: inline-block;
+    width: 24%; }
 
 /*********************************************
  * IMAGES
